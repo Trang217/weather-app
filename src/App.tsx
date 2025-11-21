@@ -3,7 +3,7 @@ import WeatherApp from "./components/WeatherApp";
 
 function App(): JSX.Element {
   return (
-    <div>
+    <div className="font-lilita tracking-wider">
       <WeatherApp />
     </div>
   );
