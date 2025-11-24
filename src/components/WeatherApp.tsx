@@ -61,7 +61,7 @@ function WeatherApp(): JSX.Element {
 
     try {
       const response = await fetch(
-        `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api_key}&units=metric`
+        `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api_key}&units=metric`
       );
 
       const res = await response.json();
