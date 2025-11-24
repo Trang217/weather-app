@@ -90,7 +90,9 @@ function WeatherApp(): JSX.Element {
 
   return (
     <div
-      className={`flex justify-center items-center min-h-screen ${weatherData?.main_status}`}
+      className={`flex justify-center items-center min-h-screen ${
+        weatherData?.main_status ?? "Clear"
+      }`}
     >
       <div
         className={`weather-app w-md rounded-2xl shadow-xl ${weatherData?.main_status} p-5`}
@@ -142,7 +144,9 @@ function WeatherApp(): JSX.Element {
           </div>
 
           <div
-            className={`w-1/2 flex flex-col space-y-2 justify-center items-center shadow-4xl opacity-90 ${weatherData?.main_status} rounded-xl p-4`}
+            className={`w-1/2 flex flex-col space-y-2 justify-center items-center shadow-4xl opacity-90 ${
+              weatherData?.main_status ?? "Clear"
+            } rounded-xl p-4`}
           >
             <div className="data-name">Wind</div>
             <Wind />
