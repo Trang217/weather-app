@@ -4,3 +4,21 @@
 @theme {
   --font-lilita: "Lilita One", sans-serif;
 }
+.Clear {
+  @apply bg-linear-to-r from-amber-100 to-orange-300;
+}
+.Clouds {
+  @apply bg-linear-to-r from-gray-200 to-gray-400;
+}
+.Rain {
+  @apply bg-linear-to-r from-slate-500 to-slate-700;
+}
+.Snow {
+  @apply bg-linear-to-r from-blue-200 to-blue-400;
+}
+.Haze {
+  @apply bg-linear-to-r from-stone-100 to-stone-300;
+}
+.Mist {
+  @apply bg-linear-to-r from-slate-100 to-slate-300;
+}
