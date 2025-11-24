@@ -132,7 +132,9 @@ function WeatherApp(): JSX.Element {
         </div>
         <div className="flex space-x-2 mt-8">
           <div
-            className={`w-1/2 flex flex-col space-y-2 justify-center items-center shadow-2xl opacity-90 ${weatherData?.main_status} rounded-xl p-4`}
+            className={`w-1/2 flex flex-col space-y-2 justify-center items-center shadow-2xl opacity-90 ${
+              weatherData?.main_status ?? "Clear"
+            } rounded-xl p-4`}
           >
             <div className="data-name">Humidity</div>
             <Droplet />
